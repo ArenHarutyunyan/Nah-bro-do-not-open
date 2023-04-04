@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href= "/static/css/index.css">
+<!-- Блок который расширяет head -->
+{% block head %}{% endblock %}
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="/">About</a>
+  <a href="/credits">Credits</a>
+  <a href="/trailers">Trailers</a>
+</div>
+
+<div class="content">
+  {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
